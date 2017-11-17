@@ -11,7 +11,7 @@ namespace Landis.Test.Ecoregions
 
         //---------------------------------------------------------------------
 
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         public void Init()
         {
             parameters = new EditableParameters();
@@ -20,21 +20,23 @@ namespace Landis.Test.Ecoregions
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(InputValueException))]
         public void NameEmpty()
         {
-            InputValue<string> name = new InputValue<string>("", "");
-            parameters.Name = name;
+            Assert.Throws<InputValueException>(delegate { 
+                InputValue<string> name = new InputValue<string>("", "");
+                parameters.Name = name;
+            });
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(InputValueException))]
         public void NameWhitespace()
         {
-            InputValue<string> name = new InputValue<string>("   ", "   ");
-            parameters.Name = name;
+            Assert.Throws<InputValueException>(delegate {
+                InputValue<string> name = new InputValue<string>("   ", "   ");
+                parameters.Name = name;
+            });
         }
     }
 }

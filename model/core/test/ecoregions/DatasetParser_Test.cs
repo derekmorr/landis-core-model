@@ -14,7 +14,7 @@ namespace Landis.Test.Ecoregions
 
         //---------------------------------------------------------------------
 
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         public void Init()
         {
             Data.InitializeDirectory(ModuleData.GetRelativePath("ecoregions"));
@@ -60,46 +60,41 @@ namespace Landis.Test.Ecoregions
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void Empty()
         {
-            TryParse("empty.txt", LineReader.EndOfInput);
+            Assert.Throws<LineReaderException>(delegate { TryParse("empty.txt", LineReader.EndOfInput); });
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void LandisData_WrongName()
         {
-            TryParse("LandisData-WrongName.txt", 3);
+            Assert.Throws<LineReaderException>(delegate { TryParse("LandisData-WrongName.txt", 3); });
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void LandisData_NoValue()
         {
-            TryParse("LandisData-NoValue.txt", 3);
+            Assert.Throws<LineReaderException>(delegate { TryParse("LandisData-NoValue.txt", 3); });
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void LandisData_MissingQuote()
         {
-            TryParse("LandisData-MissingQuote.txt", 3);
+            Assert.Throws<LineReaderException>(delegate { TryParse("LandisData-MissingQuote.txt", 3); });
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void LandisData_WrongValue()
         {
-            TryParse("LandisData-WrongValue.txt", 3);
+            Assert.Throws<LineReaderException>(delegate { TryParse("LandisData-WrongValue.txt", 3); });
         }
 
         //---------------------------------------------------------------------
@@ -171,109 +166,97 @@ namespace Landis.Test.Ecoregions
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void Active_InvalidYes()
         {
-            TryParse("Active-InvalidYes.txt", 12);
+            Assert.Throws<LineReaderException>(delegate { TryParse("Active-InvalidYes.txt", 12); });
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void Active_InvalidNo()
         {
-            TryParse("Active-InvalidNo.txt", 12);
+            Assert.Throws<LineReaderException>(delegate { TryParse("Active-InvalidNo.txt", 12); });
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void MapCode_Missing()
         {
-            TryParse("MapCode-Missing.txt", 12);
+            Assert.Throws<LineReaderException>(delegate { TryParse("MapCode-Missing.txt", 12); });
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void MapCode_Invalid()
         {
-            TryParse("MapCode-Invalid.txt", 12);
+            Assert.Throws<LineReaderException>(delegate { TryParse("MapCode-Invalid.txt", 12); });
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void MapCode_Negative()
         {
-            TryParse("MapCode-Negative.txt", 12);
+            Assert.Throws<LineReaderException>(delegate { TryParse("MapCode-Negative.txt", 12); });
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void MapCode_TooBig()
         {
-            TryParse("MapCode-TooBig.txt", 12);
+            Assert.Throws<LineReaderException>(delegate { TryParse("MapCode-TooBig.txt", 12); });
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void MapCode_Repeated()
         {
-            TryParse("MapCode-Repeated.txt", 12);
+            Assert.Throws<LineReaderException>(delegate { TryParse("MapCode-Repeated.txt", 12); });
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void Name_Missing()
         {
-            TryParse("Name-Missing.txt", 12);
+            Assert.Throws<LineReaderException>(delegate { TryParse("Name-Missing.txt", 12); });
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void Name_Repeated()
         {
-            TryParse("Name-Repeated.txt", 12);
+            Assert.Throws<LineReaderException>(delegate { TryParse("Name-Repeated.txt", 12); });
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void Description_Missing()
         {
-            TryParse("Description-Missing.txt", 12);
+            Assert.Throws<LineReaderException>(delegate { TryParse("Description-Missing.txt", 12); });
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void Description_NoEndQuote()
         {
-            TryParse("Description-NoEndQuote.txt", 12);
+            Assert.Throws<LineReaderException>(delegate { TryParse("Description-NoEndQuote.txt", 12); });
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void ExtraText()
         {
-            TryParse("ExtraText.txt", 12);
+            Assert.Throws<LineReaderException>(delegate { TryParse("ExtraText.txt", 12); });
         }
     }
 }

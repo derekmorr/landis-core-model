@@ -71,28 +71,26 @@ namespace Landis.Test.Ecoregions
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(System.IndexOutOfRangeException))]
         public void IndexerWithNegativeInt()
         {
             // We expect the statement below to raise an exception, so disable
             // the CS0219 warning:
             // "The variable '...' is assigned but its value is never used'.
 #pragma warning disable 0219
-            IEcoregion ecoregion = dataset[-1];
+            Assert.Throws<System.IndexOutOfRangeException>(delegate { IEcoregion ecoregion = dataset[-1]; });
 #pragma warning restore 0219
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(System.IndexOutOfRangeException))]
         public void IndexerWithTooBigInt()
         {
             // We expect the statement below to raise an exception, so disable
             // the CS0219 warning:
             // "The variable '...' is assigned but its value is never used'.
 #pragma warning disable 0219
-            IEcoregion ecoregion = dataset[dataset.Count];
+            Assert.Throws<System.IndexOutOfRangeException>(delegate { IEcoregion ecoregion = dataset[dataset.Count]; });
 #pragma warning restore 0219
         }
 

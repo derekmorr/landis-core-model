@@ -14,7 +14,7 @@ namespace Landis.Test.Species
 
         //---------------------------------------------------------------------
 
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         public void Init()
         {
             Data.InitializeDirectory(ModuleData.GetRelativePath("species"));
@@ -61,46 +61,41 @@ namespace Landis.Test.Species
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void Empty()
         {
-            TryParse("empty.txt", LineReader.EndOfInput);
+            Assert.Throws<LineReaderException>(delegate { TryParse("empty.txt", LineReader.EndOfInput); });
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void LandisData_WrongName()
         {
-            TryParse("LandisData-WrongName.txt", 3);
+            Assert.Throws<LineReaderException>(delegate { TryParse("LandisData-WrongName.txt", 3); });
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void LandisData_NoValue()
         {
-            TryParse("LandisData-NoValue.txt", 3);
+            Assert.Throws<LineReaderException>(delegate { TryParse("LandisData-NoValue.txt", 3); });
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void LandisData_MissingQuote()
         {
-            TryParse("LandisData-MissingQuote.txt", 3);
+            Assert.Throws<LineReaderException>(delegate { TryParse("LandisData-MissingQuote.txt", 3); });
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void LandisData_WrongValue()
         {
-            TryParse("LandisData-WrongValue.txt", 3);
+            Assert.Throws<LineReaderException>(delegate { TryParse("LandisData-WrongValue.txt", 3); });
         }
 
         //---------------------------------------------------------------------
@@ -187,343 +182,305 @@ namespace Landis.Test.Species
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void NameRepeated()
         {
-            TryParse("NameRepeated.txt", 21);
+            Assert.Throws<LineReaderException>(delegate { TryParse("NameRepeated.txt", 21); });
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void LongevityMissing()
         {
-            TryParse("LongevityMissing.txt", 9);
+            Assert.Throws<LineReaderException>(delegate { TryParse("LongevityMissing.txt", 9); });
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void LongevityInvalid()
         {
-            TryParse("LongevityInvalid.txt", 9);
+            Assert.Throws<LineReaderException>(delegate { TryParse("LongevityInvalid.txt", 9); });
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void LongevityNegative()
         {
-            TryParse("LongevityNegative.txt", 9);
+            Assert.Throws<LineReaderException>(delegate { TryParse("LongevityNegative.txt", 9); });
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void MaturityMissing()
         {
-            TryParse("MaturityMissing.txt", 9);
+            Assert.Throws<LineReaderException>(delegate { TryParse("MaturityMissing.txt", 9); });
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void MaturityInvalid()
         {
-            TryParse("MaturityInvalid.txt", 9);
+            Assert.Throws<LineReaderException>(delegate { TryParse("MaturityInvalid.txt", 9); });
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void MaturityNegative()
         {
-            TryParse("MaturityNegative.txt", 9);
+            Assert.Throws<LineReaderException>(delegate { TryParse("MaturityNegative.txt", 9); });
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void MaturityTooBig()
         {
-            TryParse("MaturityTooBig.txt", 9);
+            Assert.Throws<LineReaderException>(delegate { TryParse("MaturityTooBig.txt", 9); });
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void ShadeMissing()
         {
-            TryParse("ShadeMissing.txt", 9);
+            Assert.Throws<LineReaderException>(delegate { TryParse("ShadeMissing.txt", 9); });
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void ShadeInvalid()
         {
-            TryParse("ShadeInvalid.txt", 9);
+            Assert.Throws<LineReaderException>(delegate { TryParse("ShadeInvalid.txt", 9); });
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void ShadeNegative()
         {
-            TryParse("ShadeNegative.txt", 9);
+            Assert.Throws<LineReaderException>(delegate { TryParse("ShadeNegative.txt", 9); });
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void ShadeZero()
         {
-            TryParse("ShadeZero.txt", 9);
+            Assert.Throws<LineReaderException>(delegate { TryParse("ShadeZero.txt", 9); });
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void ShadeTooBig()
         {
-            TryParse("ShadeTooBig.txt", 9);
+            Assert.Throws<LineReaderException>(delegate { TryParse("ShadeTooBig.txt", 9); });
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void FireMissing()
         {
-            TryParse("FireMissing.txt", 9);
+            Assert.Throws<LineReaderException>(delegate { TryParse("FireMissing.txt", 9); });
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void FireInvalid()
         {
-            TryParse("FireInvalid.txt", 9);
+            Assert.Throws<LineReaderException>(delegate { TryParse("FireInvalid.txt", 9); });
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void FireNegative()
         {
-            TryParse("FireNegative.txt", 9);
+            Assert.Throws<LineReaderException>(delegate { TryParse("FireNegative.txt", 9); });
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void FireZero()
         {
-            TryParse("FireZero.txt", 9);
+            Assert.Throws<LineReaderException>(delegate { TryParse("FireZero.txt", 9); });
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void FireTooBig()
         {
-            TryParse("FireTooBig.txt", 9);
+            Assert.Throws<LineReaderException>(delegate { TryParse("FireTooBig.txt", 9); });
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void EffSeedMissing()
         {
-            TryParse("EffSeedMissing.txt", 9);
+            Assert.Throws<LineReaderException>(delegate { TryParse("EffSeedMissing.txt", 9); });
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void EffSeedInvalid()
         {
-            TryParse("EffSeedInvalid.txt", 9);
+            Assert.Throws<LineReaderException>(delegate { TryParse("EffSeedInvalid.txt", 9); });
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void EffSeedZero()
         {
-            TryParse("EffSeedZero.txt", 9);
+            Assert.Throws<LineReaderException>(delegate { TryParse("EffSeedZero.txt", 9); });
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void EffSeedNegative()
         {
-            TryParse("EffSeedNegative.txt", 9);
+            Assert.Throws<LineReaderException>(delegate { TryParse("EffSeedNegative.txt", 9); });
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void MaxSeedMissing()
         {
-            TryParse("MaxSeedMissing.txt", 9);
+            Assert.Throws<LineReaderException>(delegate { TryParse("MaxSeedMissing.txt", 9); });
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void MaxSeedNegative()
         {
-            TryParse("MaxSeedNegative.txt", 9);
+            Assert.Throws<LineReaderException>(delegate { TryParse("MaxSeedNegative.txt", 9); });
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void MaxSeedLessThanEff()
         {
-            TryParse("MaxSeedLessThanEff.txt", 9);
+            Assert.Throws<LineReaderException>(delegate { TryParse("MaxSeedLessThanEff.txt", 9); });
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void ReprodProbMissing()
         {
-            TryParse("ReprodProbMissing.txt", 9);
+            Assert.Throws<LineReaderException>(delegate { TryParse("ReprodProbMissing.txt", 9); });
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void ReprodProbNegative()
         {
-            TryParse("ReprodProbNegative.txt", 9);
+            Assert.Throws<LineReaderException>(delegate { TryParse("ReprodProbNegative.txt", 9); });
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void ReprodProbTooBig()
         {
-            TryParse("ReprodProbTooBig.txt", 9);
+            Assert.Throws<LineReaderException>(delegate { TryParse("ReprodProbTooBig.txt", 9); });
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void MinSproutMissing()
         {
-            TryParse("MinSproutMissing.txt", 9);
+            Assert.Throws<LineReaderException>(delegate { TryParse("MinSproutMissing.txt", 9); });
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void MinSproutNegative()
         {
-            TryParse("MinSproutNegative.txt", 9);
+            Assert.Throws<LineReaderException>(delegate { TryParse("MinSproutNegative.txt", 9); });
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void MinSproutMoreThanLongevity()
         {
-            TryParse("MinSproutMoreThanLongevity.txt", 9);
+            Assert.Throws<LineReaderException>(delegate { TryParse("MinSproutMoreThanLongevity.txt", 9); });
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void MaxSproutMissing()
         {
-            TryParse("MaxSproutMissing.txt", 9);
+            Assert.Throws<LineReaderException>(delegate { TryParse("MaxSproutMissing.txt", 9); });
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void MaxSproutNegative()
         {
-            TryParse("MaxSproutNegative.txt", 9);
+            Assert.Throws<LineReaderException>(delegate { TryParse("MaxSproutNegative.txt", 9); });
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void MaxSproutMoreThanLongevity()
         {
-            TryParse("MaxSproutMoreThanLongevity.txt", 9);
+            Assert.Throws<LineReaderException>(delegate { TryParse("MaxSproutMoreThanLongevity.txt", 9); });
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void MaxSproutLessThanMin()
         {
-            TryParse("MaxSproutLessThanMin.txt", 9);
+            Assert.Throws<LineReaderException>(delegate { TryParse("MaxSproutLessThanMin.txt", 9); });
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void PostFireRegenMissing()
         {
-            TryParse("PostFireRegenMissing.txt", 9);
+            Assert.Throws<LineReaderException>(delegate { TryParse("PostFireRegenMissing.txt", 9); });
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void PostFireRegenInvalid()
         {
-            TryParse("PostFireRegenInvalid.txt", 9);
+            Assert.Throws<LineReaderException>(delegate { TryParse("PostFireRegenInvalid.txt", 9); });
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void ExtraText()
         {
-            TryParse("ExtraText.txt", 9);
+            Assert.Throws<LineReaderException>(delegate { TryParse("ExtraText.txt", 9); });
         }
     }
 }

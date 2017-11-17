@@ -11,7 +11,7 @@ namespace Landis.Test.Species
 
         //---------------------------------------------------------------------
 
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         public void Init()
         {
             inputVar = new InputVar<int>("Effective Seed Dist", EffectiveSeedDist.ReadMethod);
@@ -132,19 +132,17 @@ namespace Landis.Test.Species
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(InputVariableException))]
         public void ReadMethod_Bad()
         {
-            TryRead(" \t 2+2 \n ");
+            Assert.Throws<InputVariableException>(delegate { TryRead(" \t 2+2 \n "); });
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(InputVariableException))]
         public void ReadMethod_TooLarge()
         {
-            TryRead(" \t 9,999,999,999 \n ");
+            Assert.Throws<InputVariableException>(delegate { TryRead(" \t 9,999,999,999 \n "); });
         }
     }
 }

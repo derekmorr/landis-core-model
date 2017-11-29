@@ -1,5 +1,4 @@
 using Edu.Wisc.Forest.Flel.Util;
-using Flel = Edu.Wisc.Forest.Flel;
 using Loader = Edu.Wisc.Forest.Flel.Util.PlugIns.Loader;
 using log4net;
 using Landis.Core;
@@ -7,9 +6,6 @@ using Landis.Core;
 using System;
 using System.IO;
 using System.Collections.Generic;
-using System.Runtime.Serialization;
-using System.Runtime.Serialization.Formatters.Binary;
-
 
 using Landis.SpatialModeling;
 

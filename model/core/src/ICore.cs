@@ -12,6 +12,8 @@ using System.IO;
 using System.Collections.Generic;
 using Edu.Wisc.Forest.Flel.Util;
 using Troschuetz.Random;
+using Troschuetz.Random.Distributions.Continuous;
+using Troschuetz.Random.Distributions.Discrete;
 
 namespace Landis.Core
 {
@@ -37,7 +39,7 @@ namespace Landis.Core
 
         //---------------------------------------------------------------------
 
-        Generator Generator
+        IGenerator Generator
         {
             get;
         }

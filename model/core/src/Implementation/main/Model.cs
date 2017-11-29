@@ -14,6 +14,9 @@ using System.Runtime.Serialization.Formatters.Binary;
 using Landis.SpatialModeling;
 
 using Troschuetz.Random;
+using Troschuetz.Random.Distributions.Continuous;
+using Troschuetz.Random.Distributions.Discrete;
+using Troschuetz.Random.Generators;
 
 namespace Landis
 {
@@ -38,7 +41,7 @@ namespace Landis
         private List<ExtensionMain> disturbAndOtherExtensions;
         private IUserInterface ui;
 
-        private static Generator RandomNumberGenerator;
+        private static IGenerator RandomNumberGenerator;
         private static BetaDistribution betaDist;
         private static BetaPrimeDistribution betaPrimeDist;
         private static CauchyDistribution cauchyDist;
@@ -63,7 +66,9 @@ namespace Landis
 
         //---------------------------------------------------------------------
 
-        private static ILog logger= LogManager.GetLogger("Landis");
+        // XXX: This is a breaking change, since the GetLogger(string) method
+        // appears to have been removed in log4net 2.0.8
+        private static ILog logger = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
         //---------------------------------------------------------------------
 
@@ -158,7 +163,7 @@ namespace Landis
 
         //---------------------------------------------------------------------
 
-        Generator ICore.Generator
+        IGenerator ICore.Generator
         {
             get
             {

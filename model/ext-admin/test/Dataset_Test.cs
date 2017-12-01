@@ -1,4 +1,4 @@
-using Landis.PlugIns.Admin;
+//using Landis.PlugIns.Admin;
 using NUnit.Framework;
 using System.IO;
 
@@ -15,7 +15,7 @@ namespace Landis.Test.PlugIns.Admin
 
         //---------------------------------------------------------------------
 
-        [TestFixtureSetUp]
+        [SetUp]
         public void Init()
         {
         	fooExtension = new ExtensionInfo(
@@ -65,28 +65,25 @@ namespace Landis.Test.PlugIns.Admin
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(System.ArgumentNullException))]
         public void LoadOrCreate_Null()
         {
-        	Dataset dataset = Dataset.LoadOrCreate(null);
+            Assert.Throws<System.ArgumentNullException>(() => Dataset.LoadOrCreate(null));
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(System.ArgumentException))]
         public void LoadOrCreate_Empty()
         {
-        	Dataset dataset = Dataset.LoadOrCreate("");
+            Assert.Throws<System.ArgumentException>(() => Dataset.LoadOrCreate(""));
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(System.ArgumentException))]
         public void LoadOrCreate_Whitespace()
         {
-        	Dataset dataset = Dataset.LoadOrCreate("  ");
+            Assert.Throws<System.ArgumentException>(() => Dataset.LoadOrCreate("  "));
         }
 
         //---------------------------------------------------------------------
@@ -158,37 +155,33 @@ namespace Landis.Test.PlugIns.Admin
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(System.ArgumentNullException))]
         public void NullPath()
         {
-            TryOpenDataset(null);
+            Assert.Throws<System.ArgumentNullException>(() => TryOpenDataset(null));
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(System.ArgumentException))]
         public void EmptyPath()
         {
-            TryOpenDataset("");
+            Assert.Throws<System.ArgumentException>(() => TryOpenDataset(""));
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(System.IO.FileNotFoundException))]
         public void NonExistentPath()
         {
-            TryOpenDataset("NonExistentFile");
+            Assert.Throws<FileNotFoundException>(() => TryOpenDataset("NonExistentFile"));
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(System.InvalidOperationException))]
         public void EmptyFile()
         {
-            TryOpenDataset("EmptyFile.xml");
+            Assert.Throws<System.InvalidOperationException>(() => TryOpenDataset("EmptyFile.xml"));
         }
 
         //---------------------------------------------------------------------
@@ -238,7 +231,6 @@ namespace Landis.Test.PlugIns.Admin
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(System.InvalidOperationException))]
         public void AddNameTwice()
         {
             Dataset dataset = new Dataset();
@@ -249,7 +241,7 @@ namespace Landis.Test.PlugIns.Admin
             Assert.AreEqual(fooExtension, dataset[0]);
             Assert.AreEqual(fooExtension, dataset[fooExtension.Name]);
 
-            dataset.Add(fooExtension);
+            Assert.Throws<System.InvalidOperationException>(() => dataset.Add(fooExtension));
         }
 
         //---------------------------------------------------------------------
@@ -310,21 +302,19 @@ namespace Landis.Test.PlugIns.Admin
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(System.ArgumentNullException))]
         public void Remove_Null()
         {
         	Dataset dataset = new Dataset();
-        	dataset.Remove(null);
+            Assert.Throws<System.ArgumentNullException>(() => dataset.Remove(null));
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(System.ArgumentException))]
         public void Remove_Whitespace()
         {
         	Dataset dataset = new Dataset();
-        	dataset.Remove(" ");
+            Assert.Throws<System.ArgumentException>(() => dataset.Remove(" "));
         }
 
         //---------------------------------------------------------------------

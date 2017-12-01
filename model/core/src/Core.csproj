@@ -3,17 +3,16 @@
     <RootNamespace>Landis.Core</RootNamespace>
     <AssemblyName>Landis.Core</AssemblyName>
     <AssemblyTitle>LANDIS-II Core (API)</AssemblyTitle>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Edu.Wisc.Forest.Flel.Util">
       <HintPath>lib\Edu.Wisc.Forest.Flel.Util.dll</HintPath>
     </Reference>
-    <!-- XXX: Fix after SpatialModeling is published to nuget -->
-    <ProjectReference Include="../../../../Library-Spatial/src/api/Landis_SpatialModeling.csproj" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="log4net" Version="2.0.8" />
     <PackageReference Include="Troschuetz.Random" Version="4.2.0" />
+    <PackageReference Include="Landis.SpatialModeling" Version="1.0.0-CI00001" />
   </ItemGroup>
 </Project>

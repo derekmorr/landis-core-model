@@ -21,7 +21,7 @@ namespace Landis.Test.Ecoregions
 
         //---------------------------------------------------------------------
 
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         public void Init()
         {
             List<IEcoregionParameters> ecoregionParms = new List<IEcoregionParameters>();

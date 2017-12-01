@@ -16,7 +16,7 @@ namespace Landis.Test.PlugIns.Admin
 
         //---------------------------------------------------------------------
 
-        [TestFixtureSetUp]
+        [SetUp]
         public void Init()
         {
         	dataset = new Dataset();
@@ -58,52 +58,46 @@ namespace Landis.Test.PlugIns.Admin
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void Empty()
         {
-            TryParse("empty.txt");
+            Assert.Throws<LineReaderException>(() => TryParse("empty.txt"));
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void LandisData_WrongValue()
         {
-            TryParse("LandisData-WrongValue.txt");
+            Assert.Throws<LineReaderException>(() => TryParse("LandisData-WrongValue.txt"));
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void Name_Missing()
         {
-            TryParse("Name-Missing.txt");
+            Assert.Throws<LineReaderException>(() => TryParse("Name-Missing.txt"));
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void Name_Empty()
         {
-            TryParse("Name-Empty.txt");
+            Assert.Throws<LineReaderException>(() => TryParse("Name-Empty.txt"));
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void Name_Whitespace()
         {
-            TryParse("Name-Whitespace.txt");
+            Assert.Throws<LineReaderException>(() => TryParse("Name-Whitespace.txt"));
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void Name_InUse()
         {
         	ExtensionInfo fooBarExtension = new ExtensionInfo(
@@ -118,7 +112,7 @@ namespace Landis.Test.PlugIns.Admin
             );
         	dataset.Add(fooBarExtension);
         	try {
-	            TryParse("Foo-Bar.txt");
+                Assert.Throws<LineReaderException>(() => TryParse("Foo-Bar.txt"));
         	}
         	finally {
         		dataset.Remove(fooBarExtension.Name);
@@ -128,46 +122,41 @@ namespace Landis.Test.PlugIns.Admin
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void Version_Empty()
         {
-            TryParse("Version-Empty.txt");
+            Assert.Throws<LineReaderException>(() => TryParse("Version-Empty.txt"));
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void Version_Whitespace()
         {
-            TryParse("Version-Whitespace.txt");
+            Assert.Throws<LineReaderException>(() => TryParse("Version-Whitespace.txt"));
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void Type_Missing()
         {
-            TryParse("Type-Missing.txt");
+            Assert.Throws<LineReaderException>(() => TryParse("Type-Missing.txt"));
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void Type_Empty()
         {
-            TryParse("Type-Empty.txt");
+            Assert.Throws<LineReaderException>(() => TryParse("Type-Empty.txt"));
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void Type_Whitespace()
         {
-            TryParse("Type-Whitespace.txt");
+            Assert.Throws<LineReaderException>(() => TryParse("Type-Whitespace.txt"));
         }
 
         //---------------------------------------------------------------------
@@ -194,19 +183,17 @@ namespace Landis.Test.PlugIns.Admin
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void Description_Empty()
         {
-            TryParse("Description-Empty.txt");
+            Assert.Throws<LineReaderException>(() => TryParse("Description-Empty.txt"));
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void Description_Whitespace()
         {
-            TryParse("Description-Whitespace.txt");
+            Assert.Throws<LineReaderException>(() => TryParse("Description-Whitespace.txt"));
         }
 
         //---------------------------------------------------------------------
@@ -233,73 +220,65 @@ namespace Landis.Test.PlugIns.Admin
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void UserGuide_Empty()
         {
-            TryParse("UserGuide-Empty.txt");
+            Assert.Throws<LineReaderException>(() => TryParse("UserGuide-Empty.txt"));
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void UserGuide_Whitespace()
         {
-            TryParse("UserGuide-Whitespace.txt");
+            Assert.Throws<LineReaderException>(() => TryParse("UserGuide-Whitespace.txt"));
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void Assembly_Missing()
         {
-            TryParse("Assembly-Missing.txt");
+            Assert.Throws<LineReaderException>(() => TryParse("Assembly-Missing.txt"));
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void Assembly_Empty()
         {
-            TryParse("Assembly-Empty.txt");
+            Assert.Throws<LineReaderException>(() => TryParse("Assembly-Empty.txt"));
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void Assembly_Whitespace()
         {
-            TryParse("Assembly-Whitespace.txt");
+            Assert.Throws<LineReaderException>(() => TryParse("Assembly-Whitespace.txt"));
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void Class_Missing()
         {
-            TryParse("Class-Missing.txt");
+            Assert.Throws<LineReaderException>(() => TryParse("Class-Missing.txt"));
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void Class_Empty()
         {
-            TryParse("Class-Empty.txt");
+            Assert.Throws<LineReaderException>(() => TryParse("Class-Empty.txt"));
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void Class_Whitespace()
         {
-            TryParse("Class-Whitespace.txt");
+            Assert.Throws<LineReaderException>(() => TryParse("Class-Whitespace.txt"));
         }
 
         //---------------------------------------------------------------------
@@ -326,28 +305,25 @@ namespace Landis.Test.PlugIns.Admin
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void CoreVersion_NoMinor()
         {
-            TryParse("CoreVersion-NoMinor.txt");
+            Assert.Throws<LineReaderException>(() => TryParse("CoreVersion-NoMinor.txt"));
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void CoreVersion_BadValue()
         {
-            TryParse("CoreVersion-BadValue.txt");
+            Assert.Throws<LineReaderException>(() => TryParse("CoreVersion-BadValue.txt"));
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void CoreVersion_TooBig()
         {
-            TryParse("CoreVersion-TooBig.txt");
+            Assert.Throws<LineReaderException>(() => TryParse("CoreVersion-TooBig.txt"));
         }
 
         //---------------------------------------------------------------------
@@ -388,37 +364,33 @@ namespace Landis.Test.PlugIns.Admin
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void Extra()
         {
-            TryParse("Extra.txt");
+            Assert.Throws<LineReaderException>(() => TryParse("Extra.txt"));
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void WrongName_CoreVersion()
         {
-            TryParse("WrongName-CoreVersion.txt");
+            Assert.Throws<LineReaderException>(() => TryParse("WrongName-CoreVersion.txt"));
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void WrongName_UserGuide_CoreVer()
         {
-            TryParse("WrongName-UserGuide-CoreVer.txt");
+            Assert.Throws<LineReaderException>(() => TryParse("WrongName-UserGuide-CoreVer.txt"));
         }
 
         //---------------------------------------------------------------------
 
         [Test]
-        [ExpectedException(typeof(LineReaderException))]
         public void WrongName_Desc_UGuide_CoreVer()
         {
-            TryParse("WrongName-Desc-UGuide-CoreVer.txt");
+            Assert.Throws<LineReaderException>(() => TryParse("WrongName-Desc-UGuide-CoreVer.txt"));
         }
     }
 }

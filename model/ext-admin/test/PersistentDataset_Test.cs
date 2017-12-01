@@ -13,7 +13,7 @@ namespace Landis.Test.PlugIns.Admin
 
         //---------------------------------------------------------------------
 
-    	[TestFixtureSetUp]
+    	[SetUp]
     	public void Init()
     	{
             fooPlugIn = new PersistentDataset.PlugInInfo();

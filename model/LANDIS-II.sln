@@ -3,10 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "core\src\Core.csproj", "{2EB4837C-1AEB-840D-C3D7-6A10AFED000F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core_Implementation", "core\src\Implementation\Core_Implementation.csproj", "{131C8A74-7F7D-6782-08EB-AD34744B9E41}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extension_Dataset", "ext-dataset\src\Extension_Dataset.csproj", "{672865C4-D33E-635A-1CB6-EE7B880B34E2}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,14 +13,6 @@ Global
 		{2EB4837C-1AEB-840D-C3D7-6A10AFED000F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2EB4837C-1AEB-840D-C3D7-6A10AFED000F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2EB4837C-1AEB-840D-C3D7-6A10AFED000F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{131C8A74-7F7D-6782-08EB-AD34744B9E41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{131C8A74-7F7D-6782-08EB-AD34744B9E41}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{131C8A74-7F7D-6782-08EB-AD34744B9E41}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{131C8A74-7F7D-6782-08EB-AD34744B9E41}.Release|Any CPU.Build.0 = Release|Any CPU
-		{672865C4-D33E-635A-1CB6-EE7B880B34E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{672865C4-D33E-635A-1CB6-EE7B880B34E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{672865C4-D33E-635A-1CB6-EE7B880B34E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{672865C4-D33E-635A-1CB6-EE7B880B34E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -11,8 +11,63 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="log4net" Version="2.0.8" />
     <PackageReference Include="Troschuetz.Random" Version="4.2.0" />
     <PackageReference Include="Landis.SpatialModeling" Version="1.0.0-CI00001" />
+    <PackageReference Include="log4net" Version="2.0.8" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Implementation\ecoregions\AuxParm.cs" />
+    <Compile Remove="Implementation\ecoregions\Dataset.cs" />
+    <Compile Remove="Implementation\ecoregions\DatasetParser.cs" />
+    <Compile Remove="Implementation\ecoregions\Ecoregion.cs" />
+    <Compile Remove="Implementation\ecoregions\EcoregionPixel.cs" />
+    <Compile Remove="Implementation\ecoregions\EditableDataset.cs" />
+    <Compile Remove="Implementation\ecoregions\EditableParameters.cs" />
+    <Compile Remove="Implementation\ecoregions\IEditableDataset.cs" />
+    <Compile Remove="Implementation\ecoregions\IEditableParameters.cs" />
+    <Compile Remove="Implementation\ecoregions\InputGrid.cs" />
+    <Compile Remove="Implementation\ecoregions\Map.cs" />
+    <Compile Remove="Implementation\ecoregions\Parameters.cs" />
+    <Compile Remove="Implementation\main\EditableExtension.cs" />
+    <Compile Remove="Implementation\main\EditableExtensionList.cs" />
+    <Compile Remove="Implementation\main\EditableScenario.cs" />
+    <Compile Remove="Implementation\main\ExtensionAndInitFile.cs" />
+    <Compile Remove="Implementation\main\ExtensionInfoIO.cs" />
+    <Compile Remove="Implementation\main\ListOfEditable.cs" />
+    <Compile Remove="Implementation\main\Model.cs" />
+    <Compile Remove="Implementation\main\Scenario.cs" />
+    <Compile Remove="Implementation\main\ScenarioParser.cs" />
+    <Compile Remove="Implementation\main\SiteVarRegistry.cs" />
+    <Compile Remove="Implementation\obj\Debug\netstandard2.0\Core_Implementation.AssemblyInfo.cs" />
+    <Compile Remove="Implementation\species\AuxParm.cs" />
+    <Compile Remove="Implementation\species\Dataset.cs" />
+    <Compile Remove="Implementation\species\DatasetParser.cs" />
+    <Compile Remove="Implementation\species\EditableDataset.cs" />
+    <Compile Remove="Implementation\species\EditableParameters.cs" />
+    <Compile Remove="Implementation\species\EffectiveSeedDist.cs" />
+    <Compile Remove="Implementation\species\IEditableDataset.cs" />
+    <Compile Remove="Implementation\species\IEditableParameters.cs" />
+    <Compile Remove="Implementation\species\Parameters.cs" />
+    <Compile Remove="Implementation\species\PostFireRegenerationUtil.cs" />
+    <Compile Remove="Implementation\species\Species.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Implementation\bin\Debug\netstandard2.0\Core_Implementation.deps.json" />
+    <None Remove="Implementation\bin\Debug\netstandard2.0\Core_Implementation.dll" />
+    <None Remove="Implementation\bin\Debug\netstandard2.0\Core_Implementation.pdb" />
+    <None Remove="Implementation\bin\Debug\netstandard2.0\Edu.Wisc.Forest.Flel.Util.dll" />
+    <None Remove="Implementation\bin\Debug\netstandard2.0\Landis.Core.dll" />
+    <None Remove="Implementation\bin\Debug\netstandard2.0\Landis.Core.pdb" />
+    <None Remove="Implementation\obj\Core_Implementation.csproj.nuget.cache" />
+    <None Remove="Implementation\obj\Core_Implementation.csproj.nuget.g.props" />
+    <None Remove="Implementation\obj\Core_Implementation.csproj.nuget.g.targets" />
+    <None Remove="Implementation\obj\project.assets.json" />
+    <None Remove="Implementation\obj\Debug\netstandard2.0\Core_Implementation.AssemblyInfoInputs.cache" />
+    <None Remove="Implementation\obj\Debug\netstandard2.0\Core_Implementation.csproj.CopyComplete" />
+    <None Remove="Implementation\obj\Debug\netstandard2.0\Core_Implementation.csproj.CoreCompileInputs.cache" />
+    <None Remove="Implementation\obj\Debug\netstandard2.0\Core_Implementation.csproj.FileListAbsolute.txt" />
+    <None Remove="Implementation\obj\Debug\netstandard2.0\Core_Implementation.csprojResolveAssemblyReference.cache" />
+    <None Remove="Implementation\obj\Debug\netstandard2.0\Core_Implementation.dll" />
+    <None Remove="Implementation\obj\Debug\netstandard2.0\Core_Implementation.pdb" />
   </ItemGroup>
 </Project>

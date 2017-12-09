@@ -8,9 +8,7 @@
     <Reference Include="Edu.Wisc.Forest.Flel.Util">
       <HintPath>../../core/src/lib/Edu.Wisc.Forest.Flel.Util.dll</HintPath>
     </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\core\src\Core.csproj" />
-  </ItemGroup>
 
+    <PackageReference Include="Landis.Core" Version="1.0.0-CI00001" />
+  </ItemGroup>
 </Project>

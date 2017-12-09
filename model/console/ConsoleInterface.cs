@@ -22,7 +22,8 @@ namespace Landis
         static ConsoleInterface()
         {
             writer = TextWriter.Null;
-            log = LogManager.GetLogger("Landis");
+            System.Type type = System.Type.GetType("Landis");
+            log = LogManager.GetLogger(type);
         }
 
         //---------------------------------------------------------------------

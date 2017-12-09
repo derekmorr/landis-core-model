@@ -3,12 +3,15 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>Landis.Console</RootNamespace>
     <AssemblyName>Landis.Console-6.2</AssemblyName>
-    <TargetFramework>net471</TargetFramework>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Edu.Wisc.Forest.Flel.Util">
       <HintPath>../core/src/lib/Edu.Wisc.Forest.Flel.Util.dll</HintPath>
     </Reference>
+
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.4.0" />
+    <PackageReference Include="Landis.Core" Version="1.0.0-CI00001" />
     <PackageReference Include="Landis.SpatialModeling" Version="1.0.0-CI00001" />
     <PackageReference Include="Landis.Landscapes" Version="1.0.0-CI00001" />
     <PackageReference Include="Landis.RasterIO" Version="1.0.0-CI00001" />
@@ -16,8 +19,7 @@
     <PackageReference Include="log4net" Version="2.0.8" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\core\src\Core.csproj" />
-    <ProjectReference Include="..\core\src\Implementation\Core_Implementation.csproj" />
+    <!-- <ProjectReference Include="..\core\src\Implementation\Core_Implementation.csproj" /> -->
     <ProjectReference Include="..\ext-dataset\src\Extension_Dataset.csproj" />
   </ItemGroup>
 </Project>

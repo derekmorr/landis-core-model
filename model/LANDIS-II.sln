@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core_Implementation", "core
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extension_Dataset", "ext-dataset\src\Extension_Dataset.csproj", "{23FDC01A-62F9-4818-8F68-41469490E074}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extension_Admin", "ext-admin\Extension_Admin.csproj", "{4AC6B0F4-B651-1EB9-BF62-A1AD2B6D7AB9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{23FDC01A-62F9-4818-8F68-41469490E074}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23FDC01A-62F9-4818-8F68-41469490E074}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{23FDC01A-62F9-4818-8F68-41469490E074}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AC6B0F4-B651-1EB9-BF62-A1AD2B6D7AB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+ 		{4AC6B0F4-B651-1EB9-BF62-A1AD2B6D7AB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+ 		{4AC6B0F4-B651-1EB9-BF62-A1AD2B6D7AB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+ 		{4AC6B0F4-B651-1EB9-BF62-A1AD2B6D7AB9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

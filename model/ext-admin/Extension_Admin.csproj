@@ -5,6 +5,12 @@
     <AssemblyName>Landis.Extensions</AssemblyName>
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\build\Debug</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\build\Release</OutputPath>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Edu.Wisc.Forest.Flel.Util">
       <HintPath>../core/src/lib/Edu.Wisc.Forest.Flel.Util.dll</HintPath>
@@ -12,7 +18,14 @@
 
     <PackageReference Include="Landis.SpatialModeling" Version="1.0.0-CI00001" />
 
-    <ProjectReference Include="..\core\src\Core.csproj" />
+    <PackageReference Include="System.Runtime.InteropServices" Version="4.3.0" />
+    <PackageReference Include="System.Threading" Version="4.3.0" />
+    <PackageReference Include="System.Diagnostics.Debug" Version="4.3.0" />
+    <PackageReference Include="System.Runtime.Extensions" Version="4.3.0" />
+    <PackageReference Include="System.IO.FileSystem" Version="4.3.0" />
+    <PackageReference Include="System.Net.NameResolution" Version="4.3.0" />
+    <PackageReference Include="System.Net.Primitives" Version="4.3.0" />
+
     <ProjectReference Include="..\ext-dataset\src\Extension_Dataset.csproj" />
   </ItemGroup>
 </Project>

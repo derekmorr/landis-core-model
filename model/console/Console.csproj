@@ -15,16 +15,8 @@
     <Reference Include="Edu.Wisc.Forest.Flel.Util">
       <HintPath>..\core\src\lib\Edu.Wisc.Forest.Flel.Util.dll</HintPath>
     </Reference>
-    <Reference Include="gdal_csharp">
-      <HintPath>..\core\src\lib\gdal_lib\gdal_csharp.dll</HintPath>
-    </Reference>
  </ItemGroup>
  <ItemGroup>
-    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.4.0" />
-    <PackageReference Include="Landis.SpatialModeling" Version="1.0.0-CI00001" />
-    <PackageReference Include="Landis.Landscapes" Version="1.0.0-CI00001" />
-    <PackageReference Include="Landis.RasterIO" Version="1.0.0-CI00001" />
-    <PackageReference Include="Landis.RasterIO.Gdal" Version="1.0.0-CI00001" />
     <PackageReference Include="log4net" Version="2.0.8" />
     
     <PackageReference Include="System.Runtime.InteropServices" Version="4.3.0" />
@@ -35,6 +27,11 @@
     <PackageReference Include="System.Net.NameResolution" Version="4.3.0" />
     <PackageReference Include="System.Net.Primitives" Version="4.3.0" />
   
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.4.1" />
+    <PackageReference Include="Landis.SpatialModeling" Version="1.0.0-CI00003" />
+    <PackageReference Include="Landis.RasterIO" Version="1.0.0-CI00003" />
+    <PackageReference Include="Landis.RasterIO.Gdal" Version="1.0.0-CI00003" />
+    <PackageReference Include="Landis.Landscapes" Version="1.0.0-CI00003" />
   </ItemGroup>
   <ItemGroup>
     <!-- <ProjectReference Include="..\core\src\Implementation\Core_Implementation.csproj" /> -->

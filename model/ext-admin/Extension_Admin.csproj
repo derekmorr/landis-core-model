@@ -16,8 +16,6 @@
       <HintPath>../core/src/lib/Edu.Wisc.Forest.Flel.Util.dll</HintPath>
     </Reference>
 
-    <PackageReference Include="Landis.SpatialModeling" Version="1.0.0-CI00001" />
-
     <PackageReference Include="System.Runtime.InteropServices" Version="4.3.0" />
     <PackageReference Include="System.Threading" Version="4.3.0" />
     <PackageReference Include="System.Diagnostics.Debug" Version="4.3.0" />
@@ -27,5 +25,6 @@
     <PackageReference Include="System.Net.Primitives" Version="4.3.0" />
 
     <ProjectReference Include="..\ext-dataset\src\Extension_Dataset.csproj" />
+    <PackageReference Include="Landis.SpatialModeling" Version="1.0.0-CI00003" />
   </ItemGroup>
 </Project>

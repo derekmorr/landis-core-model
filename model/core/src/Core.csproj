@@ -18,8 +18,8 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Troschuetz.Random" Version="4.2.0" />
-    <PackageReference Include="Landis.SpatialModeling" Version="1.0.0-CI00001" />
     <PackageReference Include="log4net" Version="2.0.8" />
+    <PackageReference Include="Landis.SpatialModeling" Version="1.0.0-CI00003" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Implementation\ecoregions\AuxParm.cs" />

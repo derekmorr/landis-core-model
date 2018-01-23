@@ -11,8 +11,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extension_Dataset", "ext-da
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extension_Admin", "ext-admin\Extension_Admin.csproj", "{4AC6B0F4-B651-1EB9-BF62-A1AD2B6D7AB9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metadata", "..\..\Library-Metadata\src\Metadata.csproj", "{E0E0AF2B-C223-4AB9-A66B-CA10A78A86EF}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,10 +37,6 @@ Global
 		{4AC6B0F4-B651-1EB9-BF62-A1AD2B6D7AB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4AC6B0F4-B651-1EB9-BF62-A1AD2B6D7AB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4AC6B0F4-B651-1EB9-BF62-A1AD2B6D7AB9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E0E0AF2B-C223-4AB9-A66B-CA10A78A86EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E0E0AF2B-C223-4AB9-A66B-CA10A78A86EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E0E0AF2B-C223-4AB9-A66B-CA10A78A86EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E0E0AF2B-C223-4AB9-A66B-CA10A78A86EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

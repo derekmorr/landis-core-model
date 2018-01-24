@@ -36,6 +36,11 @@
   <ItemGroup>
     <!-- <ProjectReference Include="..\core\src\Implementation\Core_Implementation.csproj" /> -->
     <ProjectReference Include="..\ext-dataset\src\Extension_Dataset.csproj" />
+    <ProjectReference Include="..\..\..\Extension-Base-Fire\src\base-fire.csproj" />
+    <ProjectReference Include="..\..\..\Extension-Output-Cohort-Statistics\src\output-cohort-stats.csproj" />
+    <ProjectReference Include="..\..\..\Extension-Output-Biomass-Community\src\output-biomass-community.csproj" />
+    <ProjectReference Include="..\..\..\Extension-Output-Biomass\src\output-biomass.csproj" />
+    <ProjectReference Include="..\..\..\Extension-NECN-Hydro-Succession-1\src\NECN-succession.csproj" />
   </ItemGroup>
   <ItemGroup>
     <None Update="Landis.Console.dll.config">

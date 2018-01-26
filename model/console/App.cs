@@ -24,8 +24,9 @@ namespace Landis
                                                                             Path.DirectorySeparatorChar);
                 var logRepository = LogManager.GetRepository(Assembly.GetEntryAssembly());
                 log4net.Config.XmlConfigurator.Configure(logRepository,
-                                                         new FileInfo("Landis.Console.dll.config"));
-
+                                                         new FileInfo(string.Format("{0}{1}",
+                                                                                    AppDomain.CurrentDomain.BaseDirectory,
+                                                                                    "Landis.Console.dll.config")));
                 ConsoleInterface ci = new ConsoleInterface();
 
                 ci.TextWriter = Console.Out;

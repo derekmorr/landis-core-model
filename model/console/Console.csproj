@@ -41,6 +41,12 @@
     <ProjectReference Include="..\..\..\Extension-Output-Biomass-Community\src\output-biomass-community.csproj" />
     <ProjectReference Include="..\..\..\Extension-Output-Biomass\src\output-biomass.csproj" />
     <ProjectReference Include="..\..\..\Extension-NECN-Hydro-Succession-1\src\NECN-succession.csproj" />
+    <ProjectReference Include="..\..\..\Extension-Base-BDA\src\base-BDA.csproj" />
+    <ProjectReference Include="..\..\..\Extension-Base-Wind\src\base-wind.csproj" />
+    <ProjectReference Include="..\..\..\Extension-Biomass-Harvest\src\biomass-harvest.csproj" />
+    <ProjectReference Include="..\..\..\Extension-LinearWind\src\linear-wind.csproj" />
+    <ProjectReference Include="..\..\..\Extension-Local-Habitat-Suitability-Output\src\local-habitat-output.csproj" />
+    <ProjectReference Include="..\..\..\Extension-Output-Biomass-By-Age\src\output-biomass-by-age.csproj" />
   </ItemGroup>
   <ItemGroup>
     <None Update="Landis.Console.dll.config">

@@ -47,6 +47,7 @@
     <ProjectReference Include="..\..\..\Extension-LinearWind\src\linear-wind.csproj" />
     <ProjectReference Include="..\..\..\Extension-Local-Habitat-Suitability-Output\src\local-habitat-output.csproj" />
     <ProjectReference Include="..\..\..\Extension-Output-Biomass-By-Age\src\output-biomass-by-age.csproj" />
+    <ProjectReference Include="..\..\..\Extension-Output-Biomass-Reclass\src\output-biomass-reclass.csproj" />
   </ItemGroup>
   <ItemGroup>
     <None Update="Landis.Console.dll.config">

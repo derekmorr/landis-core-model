@@ -27,13 +27,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "base-wind", "..\..\Extensio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "linear-wind", "..\..\Extension-LinearWind\src\linear-wind.csproj", "{C108BE52-DC23-4810-8490-75F6ED3A4AC8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "output-biomass", "..\..\Extension-Output-Biomass-Reclass\src\output-biomass.csproj", "{3747017C-18D0-4C25-9763-31F738452C55}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "output-biomass-by-age", "..\..\Extension-Output-Biomass-By-Age\src\output-biomass-by-age.csproj", "{BEFDC76C-3A7E-47A6-BF3D-DB58BDA82CB9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "local-habitat-output", "..\..\Extension-Local-Habitat-Suitability-Output\src\local-habitat-output.csproj", "{44AF0509-326F-483A-9E76-593F7F763AD0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "biomass-harvest", "..\..\Extension-Biomass-Harvest\src\biomass-harvest.csproj", "{DBAAB5CA-D241-4FF5-B498-C88262B1D9FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "output-biomass-reclass", "..\..\Extension-Output-Biomass-Reclass\src\output-biomass-reclass.csproj", "{78089566-B992-49B6-8884-4765A37A4AC7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,10 +93,6 @@ Global
 		{C108BE52-DC23-4810-8490-75F6ED3A4AC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C108BE52-DC23-4810-8490-75F6ED3A4AC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C108BE52-DC23-4810-8490-75F6ED3A4AC8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3747017C-18D0-4C25-9763-31F738452C55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3747017C-18D0-4C25-9763-31F738452C55}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3747017C-18D0-4C25-9763-31F738452C55}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3747017C-18D0-4C25-9763-31F738452C55}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BEFDC76C-3A7E-47A6-BF3D-DB58BDA82CB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BEFDC76C-3A7E-47A6-BF3D-DB58BDA82CB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BEFDC76C-3A7E-47A6-BF3D-DB58BDA82CB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -109,6 +105,10 @@ Global
 		{DBAAB5CA-D241-4FF5-B498-C88262B1D9FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DBAAB5CA-D241-4FF5-B498-C88262B1D9FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DBAAB5CA-D241-4FF5-B498-C88262B1D9FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78089566-B992-49B6-8884-4765A37A4AC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78089566-B992-49B6-8884-4765A37A4AC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78089566-B992-49B6-8884-4765A37A4AC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78089566-B992-49B6-8884-4765A37A4AC7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

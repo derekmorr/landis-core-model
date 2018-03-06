@@ -13,12 +13,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extension_Admin", "ext-admi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "base-fire", "..\..\Extension-Base-Fire\src\base-fire.csproj", "{B8F80D3B-EE54-407F-90A1-B2339BCFD684}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NECN-succession", "..\..\Extension-NECN-Hydro-Succession-1\src\NECN-succession.csproj", "{69B36C86-D0F7-4488-B42A-10422D7F6CF7}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "output-biomass", "..\..\Extension-Output-Biomass\src\output-biomass.csproj", "{AFC709E0-4055-4DC8-A4A6-9F21D3352E2C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "output-biomass-community", "..\..\Extension-Output-Biomass-Community\src\output-biomass-community.csproj", "{5802FA89-D2DD-499B-AFB2-C21B00875BCA}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "output-cohort-stats", "..\..\Extension-Output-Cohort-Statistics\src\output-cohort-stats.csproj", "{14175A7A-B7AB-4EAD-99C9-D4A7DDCB381F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "base-BDA", "..\..\Extension-Base-BDA\src\base-BDA.csproj", "{2D4190A8-B2FD-4A7B-A7D9-A1DDECAF237F}"
@@ -27,13 +21,19 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "base-wind", "..\..\Extensio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "linear-wind", "..\..\Extension-LinearWind\src\linear-wind.csproj", "{C108BE52-DC23-4810-8490-75F6ED3A4AC8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "output-biomass-by-age", "..\..\Extension-Output-Biomass-By-Age\src\output-biomass-by-age.csproj", "{BEFDC76C-3A7E-47A6-BF3D-DB58BDA82CB9}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "local-habitat-output", "..\..\Extension-Local-Habitat-Suitability-Output\src\local-habitat-output.csproj", "{44AF0509-326F-483A-9E76-593F7F763AD0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "biomass-harvest", "..\..\Extension-Biomass-Harvest\src\biomass-harvest.csproj", "{DBAAB5CA-D241-4FF5-B498-C88262B1D9FD}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "output-biomass-reclass", "..\..\Extension-Output-Biomass-Reclass\src\output-biomass-reclass.csproj", "{78089566-B992-49B6-8884-4765A37A4AC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "output-biomass", "..\..\Extension-Output-Biomass\src\output-biomass.csproj", "{73E506E1-5A36-4AAD-8F77-C1A50B40ABDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NECN-succession", "..\..\Extension-NECN-Hydro-Succession-1\src\NECN-succession.csproj", "{ED90C931-BBD0-460A-B0FC-616F40EA198F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "biomass-harvest", "..\..\Extension-Biomass-Harvest\src\biomass-harvest.csproj", "{8456FA87-DEF6-4CBF-8531-B56048F1AB09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "output-biomass-by-age", "..\..\Extension-Output-Biomass-By-Age\src\output-biomass-by-age.csproj", "{324A6DA6-7FAC-426F-A5C6-98E1B6E9DE17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "output-biomass-community", "..\..\Extension-Output-Biomass-Community\src\output-biomass-community.csproj", "{2966F18C-93DC-4045-9267-D3D8D8E48C87}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -65,18 +65,6 @@ Global
 		{B8F80D3B-EE54-407F-90A1-B2339BCFD684}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8F80D3B-EE54-407F-90A1-B2339BCFD684}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8F80D3B-EE54-407F-90A1-B2339BCFD684}.Release|Any CPU.Build.0 = Release|Any CPU
-		{69B36C86-D0F7-4488-B42A-10422D7F6CF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{69B36C86-D0F7-4488-B42A-10422D7F6CF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{69B36C86-D0F7-4488-B42A-10422D7F6CF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{69B36C86-D0F7-4488-B42A-10422D7F6CF7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AFC709E0-4055-4DC8-A4A6-9F21D3352E2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AFC709E0-4055-4DC8-A4A6-9F21D3352E2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AFC709E0-4055-4DC8-A4A6-9F21D3352E2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AFC709E0-4055-4DC8-A4A6-9F21D3352E2C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5802FA89-D2DD-499B-AFB2-C21B00875BCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5802FA89-D2DD-499B-AFB2-C21B00875BCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5802FA89-D2DD-499B-AFB2-C21B00875BCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5802FA89-D2DD-499B-AFB2-C21B00875BCA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{14175A7A-B7AB-4EAD-99C9-D4A7DDCB381F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{14175A7A-B7AB-4EAD-99C9-D4A7DDCB381F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14175A7A-B7AB-4EAD-99C9-D4A7DDCB381F}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -93,22 +81,34 @@ Global
 		{C108BE52-DC23-4810-8490-75F6ED3A4AC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C108BE52-DC23-4810-8490-75F6ED3A4AC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C108BE52-DC23-4810-8490-75F6ED3A4AC8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BEFDC76C-3A7E-47A6-BF3D-DB58BDA82CB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BEFDC76C-3A7E-47A6-BF3D-DB58BDA82CB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BEFDC76C-3A7E-47A6-BF3D-DB58BDA82CB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BEFDC76C-3A7E-47A6-BF3D-DB58BDA82CB9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{44AF0509-326F-483A-9E76-593F7F763AD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{44AF0509-326F-483A-9E76-593F7F763AD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44AF0509-326F-483A-9E76-593F7F763AD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44AF0509-326F-483A-9E76-593F7F763AD0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DBAAB5CA-D241-4FF5-B498-C88262B1D9FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DBAAB5CA-D241-4FF5-B498-C88262B1D9FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DBAAB5CA-D241-4FF5-B498-C88262B1D9FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DBAAB5CA-D241-4FF5-B498-C88262B1D9FD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{78089566-B992-49B6-8884-4765A37A4AC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{78089566-B992-49B6-8884-4765A37A4AC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78089566-B992-49B6-8884-4765A37A4AC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78089566-B992-49B6-8884-4765A37A4AC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73E506E1-5A36-4AAD-8F77-C1A50B40ABDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73E506E1-5A36-4AAD-8F77-C1A50B40ABDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73E506E1-5A36-4AAD-8F77-C1A50B40ABDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73E506E1-5A36-4AAD-8F77-C1A50B40ABDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED90C931-BBD0-460A-B0FC-616F40EA198F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED90C931-BBD0-460A-B0FC-616F40EA198F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED90C931-BBD0-460A-B0FC-616F40EA198F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED90C931-BBD0-460A-B0FC-616F40EA198F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8456FA87-DEF6-4CBF-8531-B56048F1AB09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8456FA87-DEF6-4CBF-8531-B56048F1AB09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8456FA87-DEF6-4CBF-8531-B56048F1AB09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8456FA87-DEF6-4CBF-8531-B56048F1AB09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{324A6DA6-7FAC-426F-A5C6-98E1B6E9DE17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{324A6DA6-7FAC-426F-A5C6-98E1B6E9DE17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{324A6DA6-7FAC-426F-A5C6-98E1B6E9DE17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{324A6DA6-7FAC-426F-A5C6-98E1B6E9DE17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2966F18C-93DC-4045-9267-D3D8D8E48C87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2966F18C-93DC-4045-9267-D3D8D8E48C87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2966F18C-93DC-4045-9267-D3D8D8E48C87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2966F18C-93DC-4045-9267-D3D8D8E48C87}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
